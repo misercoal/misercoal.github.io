@@ -1,5 +1,25 @@
-<html><head>
-<meta property="wb:webmaster" content="f37a19038dce2746" />
+<html  xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta property="wb:webmaster" content="f37a19038dce2746" charset="utf-8" />
 <title>misercoal</title>
-</head><body>Hello World
-</body></html>
+</head>
+<body>
+Hello World
+
+<wb:login-button type="3,2" ></wb:login-button>
+<wb:login-button type="3,2" onlogin="login" onlogout="logout" ></wb:login-button>
+<!-- 
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=3735712927" type="text/javascript" charset="utf-8"></script> -->
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=3735712927&debug=true" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	function login(o) {
+    alert(o.screen_name)
+}
+
+function logout() {
+    alert('logout');
+}
+
+</script>
+</body>
+</html>
